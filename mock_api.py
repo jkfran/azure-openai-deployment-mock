@@ -48,7 +48,7 @@ async def mock_streaming_response():
         "after token, chunk after chunk, until the entire response is completed. "
         "For the purpose of this mock, we are repeating a small text many times to simulate "
         "a much larger response. "
-    ) * 3  # Repeat the text 3 times to simulate a large response
+    )
 
     # Break the long text into small chunks
     chunk_size = 7  # Number of characters per chunk
