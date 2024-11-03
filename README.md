@@ -16,12 +16,24 @@ This project emulates or mocks Azure OpenAI API deployments for testing and deve
 
 ### Running with Docker
 
-To run this mock API using Docker:
+To run this mock API using Docker, you can either pull the pre-built image directly from Docker Hub or build it locally:
+
+#### Option 1: Run with Pre-Built Image
+
+Pull and run the Docker container from Docker Hub:
+
+```bash
+docker run -p 8000:8000 jkfran/azure-openai-mock-api
+```
+
+The API will be available at `http://localhost:8000`.
+
+#### Option 2: Build and Run Locally
 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/azure-openai-deployment-mock.git
+   git clone https://github.com/jkfran/azure-openai-deployment-mock.git
    cd azure-openai-deployment-mock
    ```
 
@@ -37,9 +49,9 @@ To run this mock API using Docker:
    docker run -p 8000:8000 azure-openai-mock-api
    ```
 
-4. **Access the API:**
+### Access the API
 
-   The API will be available at `http://localhost:8000`. You can interact with it using tools like Postman or curl.
+The API will be available at `http://localhost:8000`. You can interact with it using tools like Postman or curl.
 
 ### API Endpoints
 
